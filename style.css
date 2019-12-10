@@ -183,3 +183,38 @@
     right: 20%;
   }
 }
+
+/* animation 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: button_2 3s linear;
+}
+@keyframes button_2 {
+  0% {
+    top: 0;
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 40px);
+  }
+  100% {
+    top: 100%;
+    left: 100%;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: button_bottom_2 3s linear;
+}
+@keyframes button_bottom_2 {
+  0% {
+    right: 0%;
+    bottom: 0;
+  }
+  50% {
+    right: calc(100% - 40px);
+  }
+  100% {
+    right: 100%;
+    bottom: 100%;
+  }
+}
